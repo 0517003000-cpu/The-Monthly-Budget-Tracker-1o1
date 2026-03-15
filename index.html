@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Monthly Budget Tracker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>Monthly Budget Tracker</h1>
+
+<div class="top">
+
+<label>Name:</label>
+<input id="name">
+
+<label>Monthly Income:</label>
+<input id="income">
+
+<label>Month:</label>
+<select id="monthSelect"></select>
+
+<button onclick="newMonth()">+ New Month</button>
+
+</div>
+
+<a href="budget-calculator.html" target="_blank">
+Open Budget Calculator
+</a>
+
+<div class="tables">
+
+<!-- ESSENTIAL -->
+
+<table>
+
+<tr><th colspan="2">Essential Expenses</th></tr>
+
+<tr>
+<td>Available Income</td>
+<td><input id="essentialBudget"></td>
+</tr>
+
+<tr><td contenteditable="true">Expense</td><td><input class="essential"></td></tr>
+<tr><td contenteditable="true">Expense</td><td><input class="essential"></td></tr>
+<tr><td contenteditable="true">Expense</td><td><input class="essential"></td></tr>
+<tr><td contenteditable="true">Expense</td><td><input class="essential"></td></tr>
+<tr><td contenteditable="true">Expense</td><td><input class="essential"></td></tr>
+
+<tr>
+<td>Total Spending</td>
+<td id="essentialTotal">0</td>
+</tr>
+
+<tr>
+<td>Status</td>
+<td id="essentialStatus">-</td>
+</tr>
+
+</table>
+
+
+<!-- NON ESSENTIAL -->
+
+<table>
+
+<tr><th colspan="2">Non Essential Expenses</th></tr>
+
+<tr>
+<td>Available Income</td>
+<td><input id="nonBudget"></td>
+</tr>
+
+<tr><td contenteditable="true">Expense</td><td><input class="non"></td></tr>
+<tr><td contenteditable="true">Expense</td><td><input class="non"></td></tr>
+<tr><td contenteditable="true">Expense</td><td><input class="non"></td></tr>
+<tr><td contenteditable="true">Expense</td><td><input class="non"></td></tr>
+<tr><td contenteditable="true">Expense</td><td><input class="non"></td></tr>
+
+<tr>
+<td>Total Spending</td>
+<td id="nonTotal">0</td>
+</tr>
+
+<tr>
+<td>Status</td>
+<td id="nonStatus">-</td>
+</tr>
+
+</table>
+
+
+<!-- SAVINGS -->
+
+<table>
+
+<tr><th colspan="2">Savings</th></tr>
+
+<tr>
+<td>Available Income</td>
+<td><input id="saveBudget"></td>
+</tr>
+
+<tr><td contenteditable="true">Expense</td><td><input class="save"></td></tr>
+<tr><td contenteditable="true">Expense</td><td><input class="save"></td></tr>
+<tr><td contenteditable="true">Expense</td><td><input class="save"></td></tr>
+<tr><td contenteditable="true">Expense</td><td><input class="save"></td></tr>
+<tr><td contenteditable="true">Expense</td><td><input class="save"></td></tr>
+
+<tr>
+<td>Total Spending</td>
+<td id="saveTotal">0</td>
+</tr>
+
+<tr>
+<td>Status</td>
+<td id="saveStatus">-</td>
+</tr>
+
+</table>
+
+</div>
+
+
+<div class="adviceBox">
+
+<h2>Budget Advice</h2>
+
+<p id="adviceMessage">
+Enter your spending to receive financial advice.
+</p>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
